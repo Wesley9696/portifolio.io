@@ -1,0 +1,73 @@
+//variaveis para responsividade também, estou colocando valores em px nas variaveis
+//e usando as variaveis de acordo com o tamanho que desejo ajustar
+
+$container-xl: 1440px;
+$container-l: 1140px;
+$container-m: 960px;
+$container-s: 540px;
+
+
+//FUNÇÕES de responsividade, a variavel $device está no arquivo _typhography.scss
+@mixin responsive($device) {
+    @if $device ==xl {
+
+        //está informando que quando for a cima de 1440px ele executara a resolução piso>$container-xl
+        @media screen and (min-width: $container-xl) {
+            @content;
+        }
+    }
+
+    @else if $device ==l {
+
+        //está função executa e responsividade de piso:1140px e teto:1440px 
+        @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+            @content;
+        }
+    }
+
+    @else if $device ==m {
+
+        //está função executa e responsividade de piso:960px e teto:1140px 
+        @media screen and (max-width: $container-l) and (min-width: $container-m) {
+            @content;
+        }
+    }
+
+
+    @else if $device ==s {
+
+        //está função executa e responsividade de teto:960px
+        @media screen and (max-width: $container-m) {
+            @content;
+        }
+    }
+
+    @else if $device ==xs {
+
+        //está função executa e responsividade de teto:540px 
+        @media screen and (max-width: $container-s) {
+            @content;
+        }
+    }
+}
+
+
+.container-hero{
+    max-width: $container-xl;
+    margin: 0 auto;
+
+    padding: 268px 24px;
+    border: 2px solid red;
+}
+
+
+.flex-astronauta{
+    
+}
+
+.astro-sup{
+    display: block;
+    margin-top: -160px;
+    width: 130%;
+    transform: translate3d(380px, 0, 0);
+}

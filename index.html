@@ -4,10 +4,70 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="js/svg-inject.min.js"></script>
 </head>
 <body>
-    <h1>Wesley Nascimento</h1>
+
+
+<!--===================HEADER===================-->
+    <header>
+        <nav class="navbar-mobile">
+
+        </nav>
+
+
+        <nav class="navbar-desktop">
+            <div class="navbar-desktop-item-1">
+                <div class="logo ml-2">
+                    <a href="">
+                        <img src="svg/logo_w.svg" alt="" onload="SVGInject(this)">
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="navbar-desktop-item-2">
+                <div class="menu-desktop">
+                    <a href="" class="nav-link-desktop px-3">SOBRE</a>
+                    <a href="" class="nav-link-desktop px-3">LIVROS</a>
+                    <a href="" class="nav-link-desktop px-3">PORTIFÓLIO</a>
+                    <a href="" class="nav-link-desktop px-3">CONTATO</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+
+
+    <!--====================HERO================-->
+
+    <main class="container-hero">
+        <div class="flex-title">
+            <h1>WESLEY</h1>
+            <h1 class="edit">NASCIMENTO</h1>
+            <p class="mt-4">Desenvolvedor Front-end</p>
+
+            <div class="flex-redessociais">
+                <a href="" class="">Linkdin</a>
+                <a href="" class="">Github</a>
+                <a href="" class="">Instagram</a>
+            </div>
+        </div>
+
+        <div class="flex-astronauta">
+            <img src="svg/astronauta-sup.svg" class="astro-sup" alt="" onload="SVGInject(this)">
+            <img src="svg/lua.svg" alt="" onload="SVGInject(this)">
+            <img src="svg/astronauta-inf.svg" alt="" onload="SVGInject(this)">
+        </div>
+
+
+    </main>
+
 </body>
 </html>
